@@ -1,0 +1,7 @@
+<?php
+
+require 'admin/config.php';
+require 'functions.php';
+require 'view/index.view.php';
+
+?>

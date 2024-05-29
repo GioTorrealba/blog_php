@@ -4,14 +4,14 @@
     <div class="contenedor">
         <div class="post">
             <article>
-                <h2 class="titulo">Titulo del articulo</h2>
-                <p class="fecha">1 de Enero del 2024</p>
-                <div class="thumnb">
+                <h2 class="titulo"><?= $post['titulo'] ?></h2>
+                <p class="fecha"><?= fecha($post['fecha']) ?></p>
+                <div class="thumb">
                     <a href="#">
-                        <img src="<?php echo RUTA; ?>/imagenes/1.png" alt="">
+                        <img src="<?php echo RUTA; ?>/imagenes/<?= $post['thumb'] ?>" alt="><?= $post['titulo'] ?>">
                     </a>
                 </div>
-                <p class="extracto">Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras</p>
+                <p class="extracto"><?= nl2br($post['texto']); ?></p>
         
                 
             </article>
